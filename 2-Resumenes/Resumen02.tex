@@ -30,9 +30,9 @@
 
 \encabezado
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conceptos básicos de teoría de conjuntos}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{defi}[Conjunto]
     Un \textbf{conjunto} es una colección bien definida de elementos, que se denota por letras mayúsculas como $A$, $B$, $C$. Los elementos de un conjunto se representan por letras minúsculas, por ejemplo, $x \in A$ significa que $x$ es un elemento de $A$.
@@ -42,11 +42,36 @@
     Dos conjuntos $A$ y $B$ son \textbf{iguales} si y solo si tienen exactamente los mismos elementos.
 \end{defi}
 
+
+\begin{defi}[Conjunto vacío]
+    El \textbf{conjunto vacío}, denotado por $\emptyset$, es un conjunto que no tiene elementos.
+\end{defi}
+
+\begin{defi}[Conjunto universal]
+    El \textbf{conjunto universal}, denotado por $U$, es el conjunto que contiene a todos los elementos de interés en un contexto dado.
+\end{defi}
+
 \begin{defi}[Subconjunto]
     Un conjunto $A$ es un \textbf{subconjunto} de un conjunto $B$, denotado $A \subseteq B$, si cada elemento de $A$ también es un elemento de $B$, es decir,
     \[
         x \in A \implies x \in B.
     \]
+\end{defi}
+
+\begin{teo}
+    Para cualquier conjunto $A$, se cumple que $\emptyset \subseteq A$ y $A \subseteq U$.
+\end{teo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Operaciones con conjuntos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{advertencia}
+    Material recomendado para esta sección: \href{Set Operations and Venn Diagrams}{https://math24.net/set-operations-venn-diagrams.html}
+\end{advertencia}
+
+\begin{defi}[Diagrama de Venn]
+    Un \textbf{diagrama de Venn} es una representación gráfica de conjuntos que consiste en círculos que se superponen para mostrar todas las posibles relaciones entre los conjuntos.
 \end{defi}
 
 \begin{defi}[Unión de conjuntos]
@@ -56,12 +81,20 @@
     \]
 \end{defi}
 
+\begin{teo}
+    Para cualquier conjunto $A$, se cumple que $\emptyset \cup A = A$ y $U \cup A = U$.
+\end{teo}
+
 \begin{defi}[Intersección de conjuntos]
     La \textbf{intersección de dos conjuntos} $A$ y $B$, denotada $A \cap B$, es el conjunto de todos los elementos que están tanto en $A$ como en $B$; es decir:
     \[
         A \cap B = \{x : x \in A \land x \in B\}.
     \]
 \end{defi}
+
+\begin{teo}
+    Para cualquier conjunto $A$, se cumple que $\emptyset \cap A = \emptyset$ y $U \cap A = A$.
+\end{teo}
 
 \begin{defi}[Diferencia de conjuntos]
     La \textbf{diferencia de conjuntos} $A$ y $B$, denotada $A \setminus B$, es el conjunto de todos los elementos que están en $A$ pero no en $B$; es decir:
@@ -77,6 +110,85 @@
     \]
 \end{defi}
 
+\begin{teo}
+    Para cualquier conjunto $A$, se cumple que $(A^c)^c = A$.
+\end{teo}
+
+\begin{defi}[Producto cartesiano]
+    El \textbf{producto cartesiano} de dos conjuntos $A$ y $B$, denotado $A \times B$, es el conjunto de todos los pares ordenados $(a, b)$ donde $a \in A$ y $b \in B$; es decir,
+    \[
+        A \times B = \{(a, b) : a \in A \land b \in B\}.
+    \]
+\end{defi}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cardinalidad}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{defi}[Cardinalidad]
+    La \textbf{cardinalidad} de un conjunto $A$, denotada por $|A|$, es el número de elementos en $A$.
+\end{defi}
+
+\begin{teo}
+    Dados dos conjuntos $A$ y $B$, se cumple que $|A \cup B| = |A| + |B| - |A \cap B|$.
+\end{teo}
+
+\begin{teo}
+    Dados dos conjuntos $A$ y $B$, se cumple que $|A \times B| = |A| \cdot |B|$.
+\end{teo}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conjuntos numéricos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{defi}[Conjunto de los números naturales]
+    El \textbf{conjunto de los números naturales}, denotado por $\N$, es el conjunto:
+    \[
+        \N = \{0, 1, 2, 3, 4, \ldots\}.
+    \]
+\end{defi}
+
+\begin{defi}
+    El \textbf{conjunto de los números enteros}, denotado por $\Z$, es el conjunto:
+    \[
+        \Z = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}.
+    \]
+\end{defi}
+
+\begin{defi}
+    El \textbf{conjunto de los números racionales}, denotado por $\Q$, es el conjunto de todos los números que pueden ser expresados como una fracción de dos enteros, es decir:
+    \[
+        \Q = \left\{ \frac{a}{b} : a, b \in \Z, b \neq 0 \right\}.
+    \]
+\end{defi}
+
+\begin{defi}
+    El \textbf{conjunto de los números reales}, denotado por $\R$, es el conjunto de todos los números que pueden ser representados en la recta numérica.
+\end{defi}
+
+\begin{teo}
+    Se tiene que
+    \[
+        \N \subseteq \Z \subseteq \Q \subseteq \R.
+    \]
+\end{teo}
+
+\begin{defi}[Intevalos]
+    Dados dos números reales $a$ y $b$, con $a < b$, se definen los siguientes intervalos:
+    \begin{itemize}
+        \item $\left]a, b\right[ = \{x : a < x < b\}$.
+        \item $[a, b] = \{x : a \leq x \leq b\}$.
+        \item $\left[a, b\right[ = \{x : a \leq x < b\}$.
+        \item $\left]a, b\right] = \{x : a < x \leq b\}$.
+        \item $\left]-\infty, a\right[ = \{x : x < a\}$.
+        \item $\left]-\infty, a\right] = \{x : x \leq a\}$.
+        \item $\left[a, +\infty\right[ = \{x : x > a\}$.
+        \item $\left[a, +\infty\right] = \{x : x \geq a\}$.
+    \end{itemize}
+\end{defi}
+    
 
 
 

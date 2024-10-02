@@ -30,17 +30,14 @@
 
 \encabezado
 
-\vspace*{-10mm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Indicaciones}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section*{Indicaciones}
 \begin{itemize}[leftmargin=*]
 \item 
     En esta actividad se evalúa si el estudiante \textit{(Criterio 3.1) aplica los principios de lógica matemática, teoría de conjuntos y números reales para la resolución de problemas prácticos.}
 \item 
-    
+    El resultado de aprendizaje al que apunta esta actividad es (RdA1): Aplicar los conceptos de matemática básica y estadística básica en la resolución de problemas prácticos en diversos contextos.
+\item 
+    El trabajo debe ser resuelto en grupos de 4 estudiantes.
 \end{itemize}
 
 
@@ -48,26 +45,181 @@
 \section{Objetivos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Utilizar tablas de verdad y nociones de la teoría de conjuntos para analizar y resolver una problemática relacionada con la medicina veterinaria, desarrollando habilidades de pensamiento lógico y resolución de problemas en un contexto aplicado.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Descripción}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+La aplicación de conceptos de lógica matemática y teoría de conjuntos en el diagnóstico y tratamiento de enfermedades en medicina veterinaria es fundamental para mejorar la eficacia y precisión de los procesos clínicos. En particular, el uso de tablas de verdad y operaciones de conjuntos proporciona herramientas poderosas para analizar síntomas, establecer diagnósticos diferenciales y diseñar protocolos de tratamiento. 
+
+En este reto, aplicarás estos conceptos matemáticos para desarrollar un sistema de apoyo a la decisión clínica en una clínica veterinaria, centrándote en el diagnóstico de enfermedades infecciosas comunes en perros. Este enfoque te permitirá adquirir una comprensión profunda de cómo las matemáticas pueden mejorar la práctica veterinaria y la atención animal.
 
 \subsection{Pregunta esencial}
-
+¿Cómo pueden los conceptos de lógica matemática y teoría de conjuntos optimizar el proceso de diagnóstico y tratamiento de enfermedades infecciosas en perros, mejorando la eficiencia y precisión en la práctica clínica veterinaria?
 
 \subsection{Reto}
+El desafío consiste en desarrollar un sistema de apoyo a la decisión clínica utilizando tablas de verdad y teoría de conjuntos para analizar y modelar la relación entre síntomas y enfermedades infecciosas comunes en perros. Utilizarás los datos proporcionados sobre síntomas y enfermedades para crear un modelo lógico que ayude en el diagnóstico y la toma de decisiones de tratamiento. El producto final incluirá un documento explicativo y un video tutorial, que serán útiles para otros estudiantes de veterinaria y profesionales interesados en la aplicación de métodos matemáticos en la práctica clínica.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Producto}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+El documento final debe incluir las siguientes secciones:
+
+\subsection{Introducción}
+La introducción debe proporcionar un contexto general sobre la importancia del diagnóstico preciso en medicina veterinaria y cómo los métodos matemáticos pueden mejorar este proceso.
+
+\subsection{Desarrollo}
+El desarrollo del documento debe incluir los siguientes puntos:
+
+\subsubsection{Tablas de verdad}
+Explica qué son las tablas de verdad y cómo se construyen. Luego, analiza las siguientes proposiciones compuestas relacionadas con los síntomas y enfermedades en perros:
+
+\begin{itemize}
+    \item Un perro tiene moquillo si y solo si presenta fiebre y, tos o letargia, pero no diarrea.
+    \item Un perro tiene parvovirosis si y solo si presenta fiebre, letargia y diarrea, pero no tos.
+    \item Un perro tiene leptospirosis si presenta fiebre y letargia, y además tiene diarrea o pérdida de apetito.
+\end{itemize}
+
+Para cada una de estas proposiciones, realiza lo siguiente:
+
+\begin{enumerate}
+    \item Identifica las letras proposicionales. Por ejemplo, para la primera proposición:
+       \begin{itemize}
+         \item M: El perro tiene moquillo
+         \item F: El perro presenta fiebre
+         \item T: El perro presenta tos
+         \item L: El perro presenta letargia
+         \item D: El perro presenta diarrea
+       \end{itemize}
+    
+    \item Escribe la proposición utilizando símbolos lógicos. Por ejemplo, para la primera proposición:
+       \[M \leftrightarrow [F \land (T \lor L) \land \lnot D]\]
+    
+    \item Construye una tabla de verdad completa para esta proposición. La tabla debe incluir columnas para cada letra proposicional, así como columnas intermedias para las subexpresiones y la expresión final completa.
+    
+    \item Analiza los resultados de la tabla de verdad:
+       \begin{itemize}
+         \item ¿En qué casos la proposición es verdadera?
+         \item ¿Qué combinaciones de síntomas indican la presencia de la enfermedad según esta proposición?
+         \item ¿Cómo cambiaría el diagnóstico si se modificara la proposición?
+         \item Si un perro presenta fiebre, tos y letargia, pero no diarrea, ¿tiene la enfermedad según esta proposición?
+       \end{itemize}
+
+    \item Compara las tablas de verdad de las tres enfermedades. ¿Hay alguna combinación de síntomas que podría llevar a un diagnóstico ambiguo? ¿Cómo podrías usar esta información para mejorar el proceso de diagnóstico?
+    
+    \item Discute cómo este tipo de análisis lógico puede ser útil en el diagnóstico veterinario y qué limitaciones podría tener.
+\end{enumerate}
+
+\subsubsection{Teoría de conjuntos y operaciones}
+
+En esta sección, aplicaremos los conceptos de teoría de conjuntos para analizar las relaciones entre síntomas y enfermedades en medicina veterinaria. Utilizaremos la información proporcionada en la tabla de síntomas y enfermedades.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Enfermedad} & \textbf{Fiebre} & \textbf{Letargia} & \textbf{Pérdida de apetito} & \textbf{Tos} & \textbf{Diarrea} \\
+\midrule
+Moquillo & 1 & 1 & 1 & 1 & 0 \\
+Parvovirosis & 1 & 1 & 1 & 0 & 1 \\
+Leptospirosis & 1 & 1 & 0 & 0 & 1 \\
+Hepatitis infecciosa & 1 & 1 & 1 & 0 & 0 \\
+Traqueobronquitis & 0 & 0 & 0 & 1 & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Presencia de síntomas en enfermedades infecciosas caninas}
+\label{tabla:sintomas_enfermedades}
+\end{table}
+
+\begin{enumerate}
+    \item Define los conjuntos de síntomas para cada enfermedad basándote en la tabla de datos proporcionada. Utiliza la notación de conjuntos adecuada. Por ejemplo:
+    \[M = \{\text{Fiebre}, \text{Letargia}, \text{Pérdida de apetito}, \text{Tos}\}\]
+    donde M es el conjunto de síntomas del moquillo.
+
+    \item Representa estos conjuntos mediante diagramas de Venn.
+
+    \item Realiza las siguientes operaciones con los conjuntos definidos y explica su significado clínico:
+    \begin{itemize}
+        \item Intersección entre los conjuntos de síntomas de parvovirosis (P) y leptospirosis (L).
+        \item Unión de los conjuntos de síntomas de moquillo (M) y hepatitis infecciosa (H).
+        \item Diferencia entre el conjunto de síntomas de moquillo (M) y traqueobronquitis (T).
+        \item Complemento del conjunto de síntomas de traqueobronquitis (T) con respecto al universo de todos los síntomas.
+    \end{itemize}
+
+    \item Interpreta el significado clínico de cada operación. Por ejemplo, ¿qué nos dice la intersección entre los conjuntos de síntomas de parvovirosis y leptospirosis sobre el diagnóstico diferencial de estas enfermedades?
+
+    \item Calcula la cardinalidad de cada conjunto y de las operaciones realizadas. ¿Qué nos dice esto sobre la especificidad de los síntomas para cada enfermedad?
+
+    \item Utilizando los conceptos de subconjuntos, determina si hay alguna enfermedad cuyos síntomas sean un subconjunto de otra. ¿Qué implicaciones tiene esto para el diagnóstico?
+
+    \item Discute cómo el uso de la teoría de conjuntos puede ayudar en el desarrollo de un sistema de diagnóstico asistido por computadora para clínicas veterinarias. ¿Cuáles serían las ventajas y limitaciones de tal enfoque?
+\end{enumerate}
+
+\subsection{Aplicación práctica}
+En esta sección, aplicarás los conceptos de tablas de verdad y teoría de conjuntos a un caso práctico en medicina veterinaria.
+
+\begin{enumerate}
+    \item Caso de estudio: Presenta un caso hipotético de un perro que llega a la clínica con un conjunto específico de síntomas. Por ejemplo:
+    
+    «Un perro labrador de 3 años llega a la clínica presentando fiebre, letargia, y pérdida de apetito. No muestra signos de tos ni diarrea.»
+
+    \item Análisis lógico: Utiliza las proposiciones y tablas de verdad desarrolladas anteriormente para determinar qué enfermedades son posibles según estos síntomas.
+
+    \item Análisis de conjuntos: Representa los síntomas del perro como un conjunto y compáralo con los conjuntos de síntomas de las diferentes enfermedades utilizando operaciones de conjuntos.
+
+    \item Diagnóstico diferencial: Basándote en tus análisis, proporciona un diagnóstico diferencial ordenado por probabilidad.
+\end{enumerate}
+
+\subsection{Videotutorial}
+Crea un videotutorial explicando los conceptos clave y la aplicación práctica de este trabajo. El video debe cumplir con los siguientes requisitos:
+
+\begin{itemize}
+    \item Duración: máxima 7 minutos
+    \item Contenido:
+    \begin{enumerate}
+        \item Introducción a la importancia de la lógica y teoría de conjuntos en medicina veterinaria (1-2 minutos)
+        \item Explicación de cómo construir y utilizar tablas de verdad para el diagnóstico (3-4 minutos)
+        \item Demostración de cómo aplicar operaciones de conjuntos a los síntomas y enfermedades (3-4 minutos)
+        \item Ejemplo práctico: resolución del caso de estudio (3-4 minutos)
+        \item Conclusión y reflexión sobre la utilidad de estos métodos (1-2 minutos)
+    \end{enumerate}
+    \item Formato: Pantalla compartida con explicaciones verbales claras y concisas.
+    \item Incluye: Diagramas visuales, ejemplos paso a paso, y un resumen final de los puntos clave.
+\end{itemize}
+
+Incluye el enlace al videotutorial en tu informe final.
+
+\subsection{Conclusión}
+En esta sección, proporciona una reflexión final sobre el trabajo realizado. Tu conclusión debe abordar los siguientes puntos:
+
+\begin{enumerate}
+    \item Resumen de los principales hallazgos y cómo la aplicación de tablas de verdad y teoría de conjuntos puede mejorar el proceso de diagnóstico en medicina veterinaria.
+    
+    \item Discusión sobre las ventajas y limitaciones de utilizar estos métodos matemáticos en la práctica clínica veterinaria.
+    
+    \item Reflexión sobre cómo este enfoque podría integrarse con otras herramientas y métodos de diagnóstico existentes.
+    
+    \item Propuesta de posibles áreas de investigación futura o mejoras en la aplicación de estos conceptos matemáticos en medicina veterinaria.
+    
+    \item Reflexión personal sobre lo aprendido durante este proyecto y cómo ha influido en tu comprensión de la intersección entre matemáticas y medicina veterinaria.
+\end{enumerate}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Guía de Evaluación}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Rúbrica de evaluación}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    \item \textbf{Introducción (3 puntos)}: Se evaluará la claridad y precisión en la introducción de los conceptos de lógica matemática y teoría de conjuntos en el contexto de la medicina veterinaria, así como la explicación del objetivo del reto.
+    
+    \item \textbf{Tablas de Verdad (12 puntos)}: Se evaluará la correcta construcción de las tablas de verdad para las proposiciones dadas, la precisión en la identificación de las letras proposicionales, la escritura simbólica de las proposiciones, y la profundidad del análisis de los resultados en el contexto del diagnóstico veterinario.
+    
+    \item \textbf{Teoría de Conjuntos (12 puntos)}: Se evaluará la correcta definición de los conjuntos de síntomas, la precisión en la realización de las operaciones con conjuntos, la interpretación clínica de los resultados, y la creatividad en la aplicación de conceptos avanzados como el conjunto potencia y la probabilidad condicional.
+    
+    \item \textbf{Aplicación Práctica (10 puntos)}: Se evaluará la profundidad y precisión del análisis del caso de estudio, incluyendo el uso correcto de tablas de verdad y operaciones de conjuntos para el diagnóstico diferencial, así como la lógica y fundamentación del protocolo de decisión propuesto.
+    
+    \item \textbf{Videotutorial (10 puntos)}: Se evaluará la claridad, organización y calidad del videotutorial, así como la explicación de los procedimientos realizados, el uso de herramientas adecuadas para la visualización de conceptos matemáticos, y la presentación de los resultados en el contexto de la medicina veterinaria.
+    
+    \item \textbf{Conclusión (3 puntos)}: Se evaluará la profundidad de la reflexión sobre la aplicación de los métodos matemáticos en veterinaria, la discusión de las ventajas y limitaciones del enfoque, y la originalidad de las propuestas para investigación futura.
+\end{itemize}
 
 \end{document}

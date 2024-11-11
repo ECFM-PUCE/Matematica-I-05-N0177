@@ -49,46 +49,232 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{quiz}{Nombre del cuestionario}
+\begin{quiz}{Valores de verdad 2 letras}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{multi}[%
-    % - Retroalimentación
-    feedback={La respuesta correcta es $\left[0,+\infty\right[$}
-    ]%
+\begin{multi}%
     % - Indentificador
-    {Pregunta-01}
+    {Valores de verdad 2 letras - 1}
     % - Enunciado
-    ¿Cuál es la imagen de la función $\func{f}{\R}{\R}$ tal que $x\mapsto x^2$?
-    \item $\R$
-    \item* $\left[0,+\infty\right[$
-    \item $\left]-\infty,0\right]$
+    Si el valor de verdad de $p$ es True y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg p 
+    \]
+    es
+    \item[]* False
+    \item[] True
 \end{multi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{numerical}[tolerance=0.1,%
-    % - Retroalimentación
-    feedback={Se tiene que $\sen(0)=1$.}
-    ]%
+\begin{multi}%
     % - Indentificador
-    {Pregunta-02}
+    {Valores de verdad 2 letras - 2}
     % - Enunciado
-    El resultado de $\sen(0)$ es:
-    \item 0
-\end{numerical}
+    Si el valor de verdad de $p$ es True y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg p 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{shortanswer}[%
-    % - Retroalimentación
-    feedback={El dominio de la relación es $\{a,c,d\}$}
-    ]%
+\begin{multi}%
     % - Indentificador
-    {Pregunta-03}
+    {Valores de verdad 2 letras - 3}
     % - Enunciado
-    Considere la relación $\{(a,b), (a,c), (d,c), (c,c)\}$, el dominio de la relación es (colocar los elementos separados por comas, en orden alfabético y sin espacios):
-    \item a,c,d
-\end{shortanswer}
+    Si el valor de verdad de $p$ es False y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg p 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 4}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg p 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 5}
+    % - Enunciado
+    Si el valor de verdad de $p$ es True y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg q 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 6}
+    % - Enunciado
+    Si el valor de verdad de $p$ es True y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg q 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 7}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg q 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 8}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \lor q) \land \neg q 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 9}
+    % - Enunciado
+    Si el valor de verdad de $p$ es True y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg q 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 10}
+    % - Enunciado
+    Si el valor de verdad de $p$ es True y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg q 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 11}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg q 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 12}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg q 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 9}
+    % - Enunciado
+    Si el valor de verdad de $p$ es True y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg p 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 10}
+    % - Enunciado
+    Si el valor de verdad de $p$ es True y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg p 
+    \]
+    es
+    \item[]* False
+    \item[] True
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 11}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es True, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg p 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multi}%
+    % - Indentificador
+    {Valores de verdad 2 letras - 12}
+    % - Enunciado
+    Si el valor de verdad de $p$ es False y el de $q$ es False, entonces el valor de verdad de 
+    \[
+        (p \land q) \lor \neg p 
+    \]
+    es
+    \item[]* True
+    \item[] False
+\end{multi}
 
 \end{quiz}
 

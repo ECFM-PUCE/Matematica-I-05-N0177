@@ -12,7 +12,7 @@
 \institucion{Escuela de Ciencias Físicas y Matemática}
 \carrera{Medicina Veterinaria}
 \asignatura{Matemática I*}
-\tema{Reto no. 1}
+\tema{Reto no. 1: Lógica para el diagnótico veterinario}
 \autor{Andrés Merino}
 \fecha{Semestre 2024-2}
 
@@ -73,10 +73,10 @@ El desarrollo del documento debe incluir los siguientes puntos:
 \subsubsection{Tablas de verdad}
 Explica qué son las tablas de verdad y cómo se construyen. Luego, analiza las siguientes proposiciones compuestas relacionadas con los síntomas y enfermedades en perros:
 
-\begin{itemize}
-    \item Un perro tiene moquillo si y solo si presenta fiebre y, tos o letargia, pero no diarrea.
-    \item Un perro tiene parvovirosis si y solo si presenta fiebre, letargia y diarrea, pero no tos.
-    \item Un perro tiene leptospirosis si presenta fiebre y letargia, y además tiene diarrea o pérdida de apetito.
+\begin{itemize}[leftmargin=*]
+    \item Síntomas del moquillo: presenta fiebre y, tos o letargia.
+    \item Síntomas del parvovirosis: presenta fiebre, letargia y diarrea, pero no tos.
+    \item Síntomas del leptospirosis: presenta fiebre y letargia, y además tiene diarrea o pérdida de apetito.
 \end{itemize}
 
 Para cada una de estas proposiciones, realiza lo siguiente:
@@ -84,27 +84,24 @@ Para cada una de estas proposiciones, realiza lo siguiente:
 \begin{enumerate}
     \item Identifica las letras proposicionales. Por ejemplo, para la primera proposición:
        \begin{itemize}
-         \item M: El perro tiene moquillo
          \item F: El perro presenta fiebre
          \item T: El perro presenta tos
          \item L: El perro presenta letargia
-         \item D: El perro presenta diarrea
        \end{itemize}
     
-    \item Escribe la proposición utilizando símbolos lógicos. Por ejemplo, para la primera proposición:
-       \[M \leftrightarrow [F \land (T \lor L) \land \lnot D]\]
+    \item Escribe la proposición que representa la enfermedad utilizando símbolos lógicos. Por ejemplo, para la primera proposición:
+       \[F \land (T \lor L)\]
     
-    \item Construye una tabla de verdad completa para esta proposición. La tabla debe incluir columnas para cada letra proposicional, así como columnas intermedias para las subexpresiones y la expresión final completa.
+    \item Construye una tabla de verdad completa para esta proposición. Para la última proposición podrías hacer el análisis sin necesidad de la construcción de la tabla.
     
-    \item Analiza los resultados de la tabla de verdad:
+    \item Analiza los resultados:
        \begin{itemize}
          \item ¿En qué casos la proposición es verdadera?
          \item ¿Qué combinaciones de síntomas indican la presencia de la enfermedad según esta proposición?
-         \item ¿Cómo cambiaría el diagnóstico si se modificara la proposición?
-         \item Si un perro presenta fiebre, tos y letargia, pero no diarrea, ¿tiene la enfermedad según esta proposición?
+         \item Si un perro presenta fiebre, tos y letargia, pero no diarrea, ¿tiene la enfermedad según cada proposición?
        \end{itemize}
 
-    \item Compara las tablas de verdad de las tres enfermedades. ¿Hay alguna combinación de síntomas que podría llevar a un diagnóstico ambiguo? ¿Cómo podrías usar esta información para mejorar el proceso de diagnóstico?
+    \item Compara las tablas de verdad de las dos primeras enfermedades. ¿Hay alguna combinación de síntomas que podría llevar a un diagnóstico ambiguo? ¿Cómo podrías usar esta información para mejorar el proceso de diagnóstico?
     
     \item Discute cómo este tipo de análisis lógico puede ser útil en el diagnóstico veterinario y qué limitaciones podría tener.
 \end{enumerate}
@@ -130,7 +127,7 @@ Traqueobronquitis & 0 & 0 & 0 & 1 & 0 \\
 \label{tabla:sintomas_enfermedades}
 \end{table}
 
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
     \item Define los conjuntos de síntomas para cada enfermedad basándote en la tabla de datos proporcionada. Utiliza la notación de conjuntos adecuada. Por ejemplo:
     \[M = \{\text{Fiebre}, \text{Letargia}, \text{Pérdida de apetito}, \text{Tos}\}\]
     donde M es el conjunto de síntomas del moquillo.
@@ -138,7 +135,7 @@ Traqueobronquitis & 0 & 0 & 0 & 1 & 0 \\
     \item Representa estos conjuntos mediante diagramas de Venn.
 
     \item Realiza las siguientes operaciones con los conjuntos definidos y explica su significado clínico:
-    \begin{itemize}
+    \begin{itemize}[leftmargin=*]
         \item Intersección entre los conjuntos de síntomas de parvovirosis (P) y leptospirosis (L).
         \item Unión de los conjuntos de síntomas de moquillo (M) y hepatitis infecciosa (H).
         \item Diferencia entre el conjunto de síntomas de moquillo (M) y traqueobronquitis (T).
@@ -157,7 +154,7 @@ Traqueobronquitis & 0 & 0 & 0 & 1 & 0 \\
 \subsection{Aplicación práctica}
 En esta sección, aplicarás los conceptos de tablas de verdad y teoría de conjuntos a un caso práctico en medicina veterinaria.
 
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
     \item Caso de estudio: Presenta un caso hipotético de un perro que llega a la clínica con un conjunto específico de síntomas. Por ejemplo:
     
     «Un perro labrador de 3 años llega a la clínica presentando fiebre, letargia, y pérdida de apetito. No muestra signos de tos ni diarrea.»

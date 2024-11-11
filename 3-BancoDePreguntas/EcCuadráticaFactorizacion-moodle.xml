@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a question bank made for Moodle -->
+<!-- It was generated on 2024-11-11 15:2 by XeLaTeX running -->
+<!-- on Windows with the package moodle v1.0 (2023/01/28) -->
+
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$course$/top/EcCuadráticaFactorizacion</text>
+  </category>
+</question>
+ 
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 1]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} + 8 x - 24 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-6</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 2]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} + 30 x + 112 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-8</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 3]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - 14 x + 48 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>6</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 4]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} - 2 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-1</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 5]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - x + 2 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-2</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 6]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 12 x + 32 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-8</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 7]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 14 x - 45 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-9</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 8]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - 2 x = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>0</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 9]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 3 x - 54 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-9</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 10]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} - 8 x + 8 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>2</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 11]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 3 x - 18 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-6</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 12]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 3 x - 10 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-5</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 13]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 2 x + 3 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 14]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - 5 x + 4 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>1</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 15]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} + x + 20 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 16]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 15 x - 50 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-10</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 17]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} + 10 x + 8 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 18]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} + 22 x - 56 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 19]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 17 x - 70 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-10</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 20]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} - 12 x - 16 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 21]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 9 - x^{2} = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 22]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - 2 x - 35 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-5</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 23]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} + 9 x = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>0</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 24]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 7 x - 6 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-6</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 25]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} - 28 x - 80 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-10</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 26]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 10 x + 24 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-6</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 27]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 13 x + 36 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-9</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 28]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 13 x + 40 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-8</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 29]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} + 28 x - 96 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>6</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 30]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} - 8 x - 6 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 31]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - 8 x + 16 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 32]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} - 22 x + 36 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>2</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 33]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 12 x - 35 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-7</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 34]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} - 6 x - 56 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 35]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} + 12 x + 54 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 36]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 5 x = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-5</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 37]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - 4 x - 32 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 38]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 18 - 2 x^{2} = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 39]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} - x - 20 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-4</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 40]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} - 17 x - 70 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-10</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 41]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} + 3 x + 10 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-2</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 42]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ x^{2} + 3 x = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 43]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} + 6 x - 20 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-5</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 44]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} + 28 x - 90 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>5</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 45]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} + 10 x - 16 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>2</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 46]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} + 6 x = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 47]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} + 8 x - 15 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 48]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - 2 x^{2} + 10 x + 28 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-2</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 49]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ 2 x^{2} + 4 x - 70 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>-7</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html">
+    <text><![CDATA[EcCuadráticaFactorizacion - 50]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Encuentra los valores de \(x\). Ingresa la solución menor: <CENTER>\[ - x^{2} + 7 x - 12 = 0 \]</CENTER> </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>3</text>
+    <tolerance>0</tolerance>
+  </answer>
+</question>
+ 
+</quiz>

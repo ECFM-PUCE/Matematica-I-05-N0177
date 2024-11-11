@@ -1,0 +1,142 @@
+\documentclass[a4,11pt]{aleph-notas}
+% Se puede ver la documentación aquí: 
+% https://github.com/alephsub0/LaTeX_aleph-notas
+
+% -- Paquetes adicionales 
+\usepackage{enumitem}
+\usepackage{aleph-comandos}
+\usepackage{booktabs}
+
+
+% -- Datos 
+\institucion{Escuela de Ciencias Físicas y Matemática}
+\carrera{Medicina Veterinaria}
+\asignatura{Matemática I*}
+\tema{Resumen no. 4: Expresiones algebraicas}
+\autor{Fernando Jiménez T.}
+\fecha{Semestre 2024-2}
+
+\logouno[0.14\textwidth]{Logos/logoPUCE_04_ac}
+\definecolor{colortext}{HTML}{0030A1}
+\definecolor{colordef}{HTML}{0030A1}
+\fuente{montserrat}
+
+
+% -- Comandos adicionales
+\setlist[enumerate]{label=\roman*.}
+
+
+\begin{document}
+
+\encabezado
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Expresiones algebraicas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{defi}[Variable]
+    Una variable es una letra que puede representar cualquier n\'umero tomado de un conjunto de n\'umeros dado.
+\end{defi}
+Nota: Usualmente las variables se representan con las letras del final del abecedario ($x,y,z$). 
+
+\begin{defi}[Expresión algebraica]
+    Una expresi\'on algebraica es una combinaci\'on de variables y n\'umeros reales usando operaciones como la suma, resta, multiplicaci\'on, divisi\'on, potencias y ra\'ices.
+    
+    Las expresiones se pueden clasificar seg\'un su forma:
+    \begin{itemize}
+    	\item Un \textbf{monomio} es una expresi\'on algebraica de la forma $ax^k$, donde $a$ es un n\'umero real y $k$ es un n\'umero entero no negativo.
+    	\item Un \textbf{binomio} es una expresi\'on algebraica formada por la suma de dos monomios.
+    	\item Un \textbf{trinomio} es una expresi\'on algebraica formada por la suma de tres monomios.
+    	\item La suma de varios monomios, en general se llama \textbf{polinomio}.
+    \end{itemize}
+\end{defi}
+
+\begin{defi}[Polinomio]
+     Un polinomio en una variable $x$ es una expresi\'on de la forma:
+     $$
+     a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0,
+     $$
+     donde $a_0,a_1,\cdots,a_n$ son n\'umeros reales, y $n$ es un n\'umero entero no negativo.
+     
+     Si $a_n\neq 0$, entonces el polinomio tiene grado $n$.
+     
+     Cada monomio $a_kx^k$ del polinomio se dice \textbf{t\'ermino} del polinomio.
+\end{defi}
+
+\begin{prop}[Suma y resta de polinomios]
+    Para sumar o restar se debe agrupar los t\'erminos con las variables elevadas a las mismas potencias y usando la propiedad distributiva combinar los n\'umeros reales. Es decir, sean $p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0$ y $q(x) = b_mx^m + b_{m-1}x^{m-1} + \cdots + b_1 x + b_0$, dos polinomios, con $m \geq n$. La suma de estos polinomios es:
+    $$
+    \begin{aligned}
+    	p(x)+q(x) =& b_mx^m + b_{m-1}x^{m-1} + \cdots b_{n+1}x^{n+1}+ (a_n+b_n)x^n +\\
+    	&+ (a_{n-1}+b_{n-1})x^{n-1} + \cdots + (a_1+b_1) x + (a_0+b_0)
+    \end{aligned}
+    $$
+\end{prop}
+
+\begin{prop}[Multiplicaci\'on de polinomios]
+	El producto de polinomios es aplicar repetidamente la propiedad distributiva y usar correctamente las leyes de los exponentes. Por ejemplo, el producto de $p(x) = ax+b$ por $q(x) = cx+d$ es:
+	$$
+	p(x)q(x) = (ax+b)(cx+d) = acx^2 + (ad + bc)x + bd.
+	$$
+\end{prop}
+
+\begin{prop}[F\'ormulas de productos notables]
+    Ciertos productos son tan comunes que en ocasiones aplicar las siguientes formulas facilita los c\'alculos.
+    
+    Sean $A$ y $B$ dos expresiones algebraicas, entonces
+    
+    \begin{itemize}[leftmargin=*]
+    	\item $(A+B)(A-B) = A^2 - B^2$
+    	\item $(A+B)^2 = A^2 + 2AB + B^2$
+    	\item $(A-B)^2 = A^2 - 2AB + B^2$
+    	\item $(A+B)^3 = A^3 + 3A^2B + 3AB^2 +B^3$
+        \item $(A-B)^3 = A^3 - 3A^2B + 3AB^2 -B^3$
+    \end{itemize}
+\end{prop}
+
+\begin{defi}[Factorizaci\'on de factores comunes]
+    Factorizar una expresi\'on consiste en aplicar la propiedad distributiva de forma inversa, de tal forma que la expresi\'on resultante sea el producto de dos o m\'as expresiones algebraicas m\'as sencillas que la expresi\'on inicial.
+\end{defi}
+
+\begin{prop}[Factorización de trinomios]
+    Para factorizar un trinomio de la forma $x^2 + bx + c$ se debe seleccionar dos n\'umeros $r,s \in \mathbb{R}$ tales que $r+s = b$ y $r\cdot s = c$. Si dichos n\'umeros existen, entonces tendremos que:
+    $$
+    (x+r)(x+s) = x^2 + (r+s)x + rs.
+    $$
+\end{prop}
+
+\begin{prop}[F\'ormulas especiales de factorizaci\'on]
+    Algunas factorizaciones comunes son:
+    \item Diferencia de cuadrados: $A^2 - B^2 = (A- B)(A+B)$.
+    \item Cuadrado perfecto: $A^2 + 2AB + B^2 = (A+B)^2$.
+    \item Cuadrado perfecto: $A^2 - 2AB + B^2 = (A-B)^2$.
+    \item Diferencia de cubos: $A^3 - B^3 = (A-B)(A^2 + AB + B^2)$.
+    \item Suma de cubos: $A^3 + B^3 = (A+B)(A^2 - AB + B^2)$.
+\end{prop}
+
+Nota: Cuando factorizamos una expresi\'on, a veces el resultado puede factorizarse a\'un m\'as.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Expresiones racionales}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{defi}[Expresi\'on fraccionaria]
+	El cociente de dos expresiones algebraicas se denomina \textbf{expresi\'on fraccionaria}.
+	
+	Una \textbf{expresi\'on racional} es una expresi\'on fraccionaria donde el numerador y el denominador son polinomios.
+\end{defi}
+
+\begin{defi}[Dominio]
+	El domino de una expresi\'on algebraica es el conjunto de n\'umeros reales que se permite que tenga la variable.
+\end{defi}
+
+\begin{prop}[Simplificaci\'on de expresiones racionales]
+	La simplificaci\'on de expresiones racionales, consiste en factorizar el numerador y denominador de tal forma que se puedan eliminar t\'erminos comunes siguiendo la siguiente propiedad:
+	$$
+	\frac{AC}{BC} = \frac{A}{B},
+	$$
+	cuando $C \neq 0$.
+\end{prop}
+
+Nota: Las operaciones de suma, resta, producto y divisi\'on se usa de forma similar como se definen los operadores en n\'umeros reales.
+
+\end{document}

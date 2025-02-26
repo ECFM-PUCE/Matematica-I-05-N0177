@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This file was generated on 2024-11-11 by XeLaTeX -->
+<!-- This file was generated on 2025-02-26 by XeLaTeX -->
 <!-- running on *NIX with the package moodle v0.9 -->
 
 <quiz>
  
 <question type="category">
   <category>
-    <text>$course$/top/Producto</text>
+    <text>$course$/top/EcCuadraticaFactorizacion</text>
   </category>
 </question>
  

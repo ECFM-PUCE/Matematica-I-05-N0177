@@ -1,5 +1,5 @@
-% \documentclass[11pt,respuestas,a4]{aleph-examen}
-\documentclass[11pt,a4]{aleph-examen}
+\documentclass[11pt,respuestas,a4]{aleph-examen}
+%\documentclass[11pt,a4]{aleph-examen}
 % Se puede ver la documentación aquí: 
 % https://github.com/alephsub0/LaTeX_aleph-examen
 
@@ -7,13 +7,14 @@
 \usepackage{aleph-comandos}
 \usepackage{booktabs}
 \usepackage{multicol}
+\usepackage{pgfplots}
 
 % -- Datos 
 \institucion{Escuela de Ciencias Físicas y Matemática}
 \carrera{Medicina Veterinaria}
 \asignatura{Matemática I*}
 \tema{Examen escrito no. 2}
-\autor{Andrés Merino}
+\autor{Fernando Jiménez T.}
 \fecha{Semestre 2024-2}
 
 
@@ -30,7 +31,8 @@
 \section*{Indicaciones}
 \begin{itemize}[leftmargin=*]
 \item 
-    En esta actividad se evalúa si el estudiante \textit{(Criterio 2.2) Resuelve sistemas de ecuaciones e inecuaciones de varias variables, aplicando métodos algebraicos y geométricos adecuados.} 
+    En esta actividad se evalúa si el estudiante \textit{(Criterio 2.2) resuelve sistemas de ecuaciones e inecuaciones de varias variables,
+    	aplicando métodos algebraicos y geométricos adecuados.} 
 \item
     Se encuentra prohibido el uso de cualquier fuente de información durante todo el examen.
 \item
@@ -44,17 +46,246 @@
 \begin{preguntas}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item
-    Pregunta
-
+\item Complete la siguiente tabla diciendo si el sistema es lineal o no, y colocar cuántas incógnitas tiene el sistema.\puntaje{15}
+\begin{center}
+    \begin{tabular}{c|c|c}
+        Sistema & \hspace{1cm} Tipo \hspace{1cm} & Num. Incógnitas  \\ \midrule
+        $\begin{cases} 
+        	2x - y = 5 \\
+        	x + y^2 = 1
+        \end{cases}$ & &  \\[2mm]\midrule
+        $\begin{cases} 
+        	2x - y = 5 \\
+        	x + 2y = 1
+        \end{cases}$ & &  \\[2mm]\midrule
+        $\begin{cases} 
+        2x - y = 5 \\
+        x + y^2 + z = 1
+        \end{cases}$ & &  \\[2mm]\midrule
+        $\begin{cases} 
+        	2x - y = 5 \\
+        	x + y + z = 1
+        \end{cases}$ & &  \\[2mm]\bottomrule
+    \end{tabular}
+\end{center}
+% -----------------------------
 \begin{respuesta}
-    Solución
+\begin{center}
+	\begin{tabular}{c|c|c}
+		Sistema & \hspace{1cm} Tipo \hspace{1cm} & Num. Incógnitas  \\ \midrule
+		$\begin{cases} 
+			2x - y = 5 \\
+			x + y^2 = 1
+		\end{cases}$ & No lineal & 2  \\[2mm]\midrule
+		$\begin{cases} 
+			2x - y = 5 \\
+			x + 2y = 1
+		\end{cases}$ & Lineal & 2 \\[2mm]\midrule
+		$\begin{cases} 
+			2x - y = 5 \\
+			x + y^2 + z = 1
+		\end{cases}$ & No lineal & 3  \\[2mm]\midrule
+		$\begin{cases} 
+			2x - y = 5 \\
+			x + y + z = 1
+		\end{cases}$ & Lineal & 3 \\[2mm]\bottomrule
+	\end{tabular}
+\end{center}
 \end{respuesta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Resolver los siguientes sistemas:\puntaje{20}
+\begin{multicols}{2}
+    \begin{enumerate}[label=\textit{\alph*)}]
+        \item $\begin{cases}
+        	3x - y  = 5 \\
+        	2x + y = 5
+        \end{cases}$
+        \item $\begin{cases}
+        	x + 2y  + 2z = 6 \\
+        	x - y = -1 \\
+        	2x + y + 3z = 7
+        \end{cases}$
+        \item $\begin{cases}
+        2x  + 5y = 9 \\
+        -x + 3y = 1 \\
+        7x - 2y = 14
+        \end{cases}$
+        \item $\begin{cases}
+        x - y  + z = 2 \\
+        x + y + 3z = 6 \\
+        2y + 3z = 5
+        \end{cases}$
+    \end{enumerate}
+\end{multicols}
+% -----------------------------
+\begin{respuesta}
+    \begin{enumerate}[label=\textit{\alph*)}]
+        \item Usando el m\'etodo de eliminaci\'on podemos sumar las dos ecuaciones obteniendo la ecuaci\'on
+        $$
+        5x = 10
+        $$
+        Es decir, tenemos que $x = 2$. Reemplazando el valor de $x$ encontrado en la segunda ecuaci\'on tenemos:
+        $$
+        2(2) + y = 5
+        $$
+        Es decir, obtenemos que $y = 1$.
+        % -------------
+        \item Primero usaremos el m\'etodo de eliminaci\'on para obtener un sistema triangular.
+        
+        Multiplicamos por $-3$ a la primera ecuaci\'on y por $2$ la segunda ecuaci\'on, luego sumamos ambas ecuaciones:
+        $$
+        \begin{aligned}
+        	-3 x - 6y - 6 z &= -18 \\
+        	4x + 2y + 6z &= 14 \\ \hline 
+        	x - 4y &= -4
+        \end{aligned}
+        $$
+        Reemplazamos la tercera ecuaci\'on por esta nueva ecuaci\'on obteniendo el sistema equivalente:
+        $$
+        \begin{cases}
+        	x + 2y  + 2z = 6 \\
+        	x - y = -1 \\
+        	x - 4y = -4
+        \end{cases}
+        $$
+        Multiplicamos por $-1$ la segunda ecuaci\'on y sumamos la tercera ecuaci\'on obteniendo:
+        $$
+        \begin{aligned}
+        	-x + y &= 1 \\
+        	x - 4y &= -4 \\ \hline
+        	-3y &= -3
+        \end{aligned}
+        $$
+        Esta nueva ecuaci\'on la reemplazamos por la tercera ecuaci\'on obteniendo el sistema equivalente:
+        $$
+        \begin{cases}
+        	x + 2y  + 2z = 6 \\
+        	x - y = -1 \\
+        	 -3y = -3
+        \end{cases}
+        $$
+        Finalmente, podemos resolver por sustituci\'on, obteniendo:
+        $$
+        \begin{cases}
+        	x = 0 \\
+        	y = 1 \\
+        	z = 2
+        \end{cases}
+        $$
+        % -----------------------------
+        \item Despejando $x$ de la segunda ecuaci\'on obtenemos:
+        $$
+        x = 3y - 1
+        $$
+        Reemplazando el valor de $x$ en la primera ecuaci\'on obtenemos:
+        $$
+        2(3y-1) + 5y = 9 \quad \Longleftrightarrow \quad y = 1
+        $$
+        Reemplazando el valor de $y$ encontrado en $x = 3y-1$, obtenemos
+        $$
+        x = 2
+        $$
+        Verifiquemos si estas el punto $(2,1)$ satisface la tercera ecuaci\'on:
+        $$
+        12 = 7(2) - 2(1) \neq 14
+        $$
+        Por lo tanto, el sistema no tiene soluci\'on.
+        % ----------
+        \item Por eliminaci\'on reduciremos el sistema a un sistema de forma triangular. 
+        
+        Primero multiplicamos por $-1$ la primera ecuaci\'on y el resultado sumamos con la segunda ecuaci\'on obteniendo:
+        $$
+        \begin{aligned}
+        	-x + y - z &= -2 \\
+        	x + y + 3z &= 6 \\ \hline
+        	2y + 2z &= 4
+        \end{aligned}
+        $$
+        Reemplazamos la segunda ecuaci\'on por la nueva ecuaci\'on, obteniendo el sistema equivalente:
+        $$
+        \begin{cases}
+        	x - y  + z = 2 \\
+        	2y + 2z = 4 \\
+        	2y + 3z = 5
+        \end{cases}
+        $$
+        Multiplicamos por $-1$ la segunda ecuaci\'on y sumamos con la tercera ecuaci\'on obteniendo:
+        $$
+        \begin{aligned}
+        	-2y -2 z  &= -4 \\
+        	2y + 3z &= 5 \\ \hline
+        	z &= 1
+        \end{aligned}
+        $$
+        Reemplazamos la tercera ecuaci\'on del sistema por la nueva ecuaci\'on, obteniendo:
+        $$
+        \begin{cases}
+        	x - y  + z = 2 \\
+        	2y + 2z = 4 \\
+        	z = 1
+        \end{cases}
+        $$
+        Como el sistema es triangular, podemos usar sustituci\'on para terminar de resolver, obteniendo:
+        $$
+        \begin{cases}
+        	x = 2 \\
+        	y = 1 \\
+        	z = 1
+        \end{cases}
+        $$
+    \end{enumerate}
+\end{respuesta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Una investigadora realiza un experimento para probar una hipótesis donde intervienen los nutrientes niacina y retinol. Ella alimenta a un grupo de ratas de laboratorio con una dieta diaria de precisamente 32 unidades de niacina y 22 mil unidades de retinol. Ella usa dos tipos de alimentos comerciales en forma de pastillas. El alimento A contiene 0.12 unidades de niacina y 100 unidades de retinol por gramo; el alimento B contiene 0.20 unidades de niacina y 50 unidades de retinol por gramo.
 
-
+¿Cuántos gramos de cada alimento les da ella al grupo de ratas diariamente? \puntaje{15}
+% -----------------------------
+\begin{respuesta}
+	Definamos las variables:
+	\begin{itemize}
+		\item[] $x$ es la cantidad en gramos del alimento $A$.
+		\item[] $y$ es la cantidad en gramos del alimento $B$.
+	\end{itemize}
+	La primera ecuaci\'on nos dice la cantidad total de niacina que se obtuvo al mezclar ambos alimentos, es decir,
+	$$
+	0.12 x + 0.20 y = 32
+	$$
+	La segunda ecuaci\'on nos dice la cantidad total de retinol que se obtiene al mezclar los alimentos.
+	$$
+	100 x + 50 y = 22 000
+	$$
+	Es decir, el sistema que debemos resolver es:
+	$$
+	\begin{cases}
+		0.12 x + 0.20 y = 32 \\
+		100 x + 50 y = 22 000
+	\end{cases}
+	$$
+	Un sistema equivalente se obtiene al multiplicar por 100 a la primera restricci\'on, obteniendo:
+	$$
+	\begin{cases}
+		12 x + 20 y = 3200 \\
+		100 x + 50 y = 22 000
+	\end{cases}
+	$$
+	Despejando $y$ de la primera restricci\'on obtenemos:
+	$$
+	y = \frac{3200 - 12x }{20}
+	$$
+	Reemplazando el valor de $y$ en la segunda restricci\'on tenemos:
+	$$
+	100 x + 50 \left( \frac{3200 - 12x }{20} \right) = 22000
+	$$
+	Resolviendo esta ecuaci\'on lineal tenemos:
+	$$
+	x = 200
+	$$
+	Reemplazando el valor de $x = 200$ en la la ecuaci\'on $y = \frac{3200 - 12x}{20}$, tenemos
+	$$
+	y = 40
+	$$
+	La investigadora ha usado 200 gramos del alimento A y 40 gramos del alimento B para alimentar a las ratas.
+\end{respuesta}
+% -----------------------------
 \end{preguntas}
-
-
 \end{document}

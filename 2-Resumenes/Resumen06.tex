@@ -1,0 +1,321 @@
+\documentclass[a4,11pt]{aleph-notas}
+% Se puede ver la documentación aquí: 
+% https://github.com/alephsub0/LaTeX_aleph-notas
+
+% -- Paquetes adicionales
+\usepackage{enumitem}
+\usepackage{aleph-comandos}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+
+
+% -- Datos 
+\institucion{Escuela de Ciencias Físicas y Matemática}
+\carrera{Medicina Veterinaria}
+\asignatura{Matemática I*}
+\tema{Resumen no. 6: Inecuaciones de una variable}
+\autor{Alejandro Galvis}
+\fecha{Semestre 2024-2}
+
+\logouno[0.14\textwidth]{Logos/logoPUCE_04_ac}
+\definecolor{colortext}{HTML}{0030A1}
+\definecolor{colordef}{HTML}{0030A1}
+\fuente{montserrat}
+
+
+% -- Comandos adicionales
+\setlist[enumerate]{label=\roman*.}
+\definecolor{colcod}{RGB}{174,218,255}
+\newtcolorbox{pycodigo}
+    {icono=\faKeyboardO,color=colcod,postit,top=2mm,bottom=2mm}
+
+
+\begin{document}
+
+\encabezado
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Definición de Inecuación}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+En medicina veterinaria, las \textbf{inecuaciones} son herramientas matemáticas útiles para modelar y resolver problemas relacionados con límites, rangos y condiciones óptimas en el cuidado animal. Estas desigualdades permiten determinar:
+
+\begin{itemize}
+    \item \textbf{Rangos de temperatura ideales:} Por ejemplo, garantizar que la temperatura en un ambiente para aves se mantenga entre \(20^\circ \text{C}\) y \(25^\circ \text{C}\), expresado como \(20 \leq T \leq 25\).
+    
+    \item \textbf{Dosis seguras de medicamentos:} Para asegurar que la concentración de un medicamento no sea tóxica, se puede expresar como \(C \leq 0.5 \, \text{mg/mL}\).
+    
+    \item \textbf{Criterios de peso saludable:} En animales jóvenes, el peso ideal puede establecerse como \(P \geq 5 \, \text{kg}\), asegurando un desarrollo adecuado.
+    
+    \item \textbf{Condiciones fisiológicas:} Las inecuaciones se utilizan para evaluar parámetros como frecuencia cardíaca o niveles de glucosa en rangos saludables, considerando valores superiores o inferiores a ciertos límites críticos.
+\end{itemize}
+
+\paragraph{Ejemplo:} Un veterinario necesita asegurar que la frecuencia cardíaca de un caballo en reposo esté entre 28 y 40 latidos por minuto, lo que puede representarse como:
+\[
+28 \leq f \leq 40.
+\]
+
+Estas aplicaciones prácticas permiten a los veterinarios tomar decisiones precisas y garantizar el bienestar animal.
+
+\vspace{1pt}
+\begin{defi}[Inecuación]
+    Una \textbf{inecuación} es una expresión matemática que establece una relación de \textit{desigualdad} entre dos cantidades o expresiones algebraicas. En general, una inecuación se escribe como:
+    \[
+    f(x) \, R \, g(x),
+    \]
+    donde:
+    \begin{itemize}
+        \item \( f(x) \) y \( g(x) \) son funciones, expresiones algebraicas o constantes.
+        \item \( R \) es una relación de desigualdad, que puede ser una de las siguientes:
+        \[
+        R \in \{\leq, <, \geq, >\}.
+        \]
+    \end{itemize}
+    El objetivo al resolver una inecuación es determinar el conjunto de valores de la variable \( x \) que satisface la relación de desigualdad.
+\end{defi}
+
+
+Como se establece en su definición, una \textbf{inecuación} es una expresión matemática que establece una relación de \textit{desigualdad} entre dos cantidades o expresiones. Las más comunes son las siguientes:
+\begin{itemize}
+    \item \( a < b \): ``\(a\) es menor que \(b\)''.
+    \item \( a \leq b \): ``\(a\) es menor o igual que \(b\)''.
+    \item \( a > b \): ``\(a\) es mayor que \(b\)''.
+    \item \( a \geq b \): ``\(a\) es mayor o igual que \(b\)''.
+\end{itemize}
+
+\subsection*{Inecuaciones Elementales}
+\begin{itemize}
+    \item \textbf{Inecuaciones Lineales}
+    \begin{itemize}
+        \item Forma General: $$ax + b \, R \, 0, \quad \text{con } a \neq 0.$$
+        \item Ejemplo: $$2x + 3 > 0.$$
+    \end{itemize}
+    
+    \item \textbf{Inecuaciones Cuadráticas}
+    \begin{itemize}
+        \item Forma General: $$ax^2 + bx + c \, R \, 0, \quad \text{con } a \neq 0.$$
+        \item Ejemplo: $$x^2 - 4x + 3 \leq 0.$$
+    \end{itemize}
+    
+    \item \textbf{Inecuaciones Racionales}
+    \begin{itemize}
+        \item Forma General: $$\frac{P(x)}{Q(x)} \, R \, 0, \quad \text{con } Q(x) \neq 0.$$
+        \item Ejemplo: $$\frac{x - 2}{x + 3} > 0.$$
+    \end{itemize}
+    
+    \item \textbf{Inecuaciones con Valor Absoluto}
+    \begin{itemize}
+        \item Forma General: $$|f(x)| \, R \, c, \quad \text{con } c \geq 0.$$
+        \item Ejemplo: $$|x - 3| < 5.$$
+    \end{itemize}
+    
+    \item \textbf{Inecuaciones Dobles}
+    \begin{itemize}
+        \item Forma General: $$c_1 \, R_1 \, f(x) \, R_2 \, c_2.$$
+        \item Ejemplo: $$-3 < 2x + 1 \leq 5.$$
+    \end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{¿Cómo resolver inecuaciones elementales?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{1. Inecuaciones Lineales}
+
+\subsubsection*{Fácil}
+Resolver:
+$$
+3x + 5 \leq 11.
+$$
+
+\textbf{Resolución:}
+\begin{enumerate}
+    \item Restamos \(5\) a ambos lados de la inecuación para despejar \(x\):
+    $$
+    3x \leq 11 - 5.
+    $$
+    \item Simplificamos:
+    $$
+    3x \leq 6.
+    $$
+    \item Dividimos entre \(3\) (manteniendo el sentido de la desigualdad porque estamos dividiendo por un número positivo):
+    $$
+    x \leq 2.
+    $$
+\end{enumerate}
+
+\textbf{Solución:}
+$$
+x \in (-\infty, 2].
+$$
+
+\subsubsection*{Reto}
+Resolver:
+$$
+\frac{4x - 5}{3} - \frac{x + 1}{2} > 1.
+$$
+
+\textbf{Resolución:}
+\begin{enumerate}
+    \item Eliminamos los denominadores multiplicando toda la inecuación por el mínimo común múltiplo de \(3\) y \(2\), que es \(6\):
+    $$
+    6 \cdot \frac{4x - 5}{3} - 6 \cdot \frac{x + 1}{2} > 6 \cdot 1.
+    $$
+    Esto da como resultado:
+    $$
+    2(4x - 5) - 3(x + 1) > 6.
+    $$
+    \item Expandimos los paréntesis:
+    $$
+    8x - 10 - 3x - 3 > 6.
+    $$
+    \item Simplificamos los términos semejantes:
+    $$
+    5x - 13 > 6.
+    $$
+    \item Sumamos \(13\) a ambos lados:
+    $$
+    5x > 19.
+    $$
+    \item Dividimos entre \(5\):
+    $$
+    x > \frac{19}{5}.
+    $$
+\end{enumerate}
+
+\textbf{Solución:}
+$$
+x \in \left(\frac{19}{5}, \infty\right).
+$$
+
+\subsection*{2. Inecuaciones Cuadráticas}
+
+\subsubsection*{Fácil}
+Resolver:
+$$
+x^2 - 4x \leq 0.
+$$
+
+\textbf{Resolución:}
+\begin{enumerate}
+    \item Factorizamos el binomio:
+    $$
+    x(x - 4) \leq 0.
+    $$
+    \item Identificamos los puntos críticos (\(x\) que anulan cada factor):
+    $$
+    x = 0 \quad \text{y} \quad x = 4.
+    $$
+    \item Dividimos la recta numérica en los intervalos:
+    $$
+    (-\infty, 0), \quad (0, 4), \quad (4, \infty).
+    $$
+    \item Probamos un valor en cada intervalo para determinar el signo del producto:
+    \begin{itemize}
+        \item En \( (-\infty, 0) \): Probamos \(x = -1\), \( (-1)(-1 - 4) = (+)\).
+        \item En \( (0, 4) \): Probamos \(x = 2\), \( (2)(2 - 4) = (-)\).
+        \item En \( (4, \infty) \): Probamos \(x = 5\), \( (5)(5 - 4) = (+)\).
+    \end{itemize}
+    \item Seleccionamos los intervalos donde el producto es menor o igual a cero:
+    $$
+    x \in [0, 4].
+    $$
+\end{enumerate}
+
+\textbf{Solución:}
+$$
+x \in [0, 4].
+$$
+
+\subsubsection*{Reto}
+Resolver la inecuación:
+$$
+x^2 - 6x + 5 > 0.
+$$
+
+\subsection*{Resolución}
+\begin{enumerate}
+    \item Factorizamos el trinomio:
+    $$
+    x^2 - 6x + 5 = (x - 1)(x - 5).
+    $$
+    \item Identificamos los puntos críticos:
+    $$
+    x = 1, \, x = 5.
+    $$
+    \item Dividimos la recta numérica en los intervalos determinados por los puntos críticos:
+    $$
+    (-\infty, 1), \quad (1, 5), \quad (5, \infty).
+    $$
+    \item Analizamos los signos de \( (x - 1)(x - 5) \) en cada intervalo mediante la siguiente tabla:
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Intervalo}       & \textbf{Valor de prueba} & \(\mathbf{x - 1}\) & \(\mathbf{x - 5}\) & \textbf{Producto \((x - 1)(x - 5)\)} & \textbf{Signo} \\
+\hline
+\( (-\infty, 1) \)       & \( x = 0 \)              & \(-\)              & \(-\)              & \( (+) \)                             & \(+\)          \\
+\hline
+\( (1, 5) \)             & \( x = 3 \)              & \(+\)              & \(-\)              & \( (-) \)                             & \(-\)          \\
+\hline
+\( (5, \infty) \)        & \( x = 6 \)              & \(+\)              & \(+\)              & \( (+) \)                             & \(+\)          \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Solución:}
+$$
+x \in (-\infty, 1) \cup (5, \infty).
+$$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{¿Cómo resolver inecuaciones... un poco más dificiles?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{1. Inecuación Racional}
+
+Resolver la siguiente inecuación:
+$$
+\frac{x^2 - 4}{x - 3} \leq 0.
+$$
+
+\subsection*{2. Inecuación con Valor Absoluto}
+
+Resolver la siguiente inecuación:
+$$
+|2x - 5| \geq 7.
+$$
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Un poco de programación en Python}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{tcolorbox}[title=¡Importante!]
+%    Material recomendado para esta sección acceder al siguiente enlace:\\
+%    \href{https://colab.research.google.com/drive/1dtsJCBOb-2m2BGXqca7iavwkilENi69B?usp=sharing}{Notebook de Google Colab}
+%\end{tcolorbox}
+
+Material en construcción...
+\begin{pycodigo}
+    \textbf{Enlace:} Material recomendado para esta sección acceder a estos enlace
+    \begin{itemize}
+        \item 
+        \href{https://colab.research.google.com/drive/1dtsJCBOb-2m2BGXqca7iavwkilENi69B?usp=sharing}{Notebook de Google Colab}
+        \item 
+        \href{https://colab.research.google.com/github/ECFM-PUCE/Python-Notebooks-Educativos/blob/main/Representacion-funciones-calculadora.ipynb}{Representación de funciones (calculadora)}
+        \item 
+        \href{https://colab.research.google.com/github/ECFM-PUCE/Python-Notebooks-Educativos/blob/main/Representacion-funciones-codigo.ipynb}{Representación de funciones (código)}
+    \end{itemize}
+\end{pycodigo}
+
+
+
+\end{document}
